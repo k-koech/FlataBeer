@@ -81,3 +81,26 @@ function handleReview(beer){
         updateBeer(beer)
     })
 }
+
+// function postReview(beer){
+//     fetch(url + `${beer.id}`, {
+//         method:'POST', 
+//         headers: {
+//             'Content-type': 'application/json',
+//             'Access-Control-Allow-Credentials' : true,
+//             'Access-Control-Allow-Origin':'*',
+//             'Access-Control-Allow-Methods':'GET',
+//             'Access-Control-Allow-Headers':'application/json',
+//     },
+//     body: JSON.stringify(beer)
+// }).then(res => res.json())
+// .then(data => console.log(data))
+// }
+
+
+
+
+
+
+
+
