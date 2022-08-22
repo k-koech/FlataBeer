@@ -15,20 +15,22 @@
     {
       "id": 2,
       "name": "Pilsen Lager",
-      "description": "Our Unleash the Yeast series was an epic experiment into the differences in aroma and flavour provided by switching up your yeast. We brewed up a wort with a light caramel note and some toasty biscuit flavour, and hopped it with Amarillo and Centennial for a citrusy bitterness. Everything else is down to the yeast. Pilsner yeast ferments with no fruity esters or spicy phenols, although it can add a hint of butterscotch.",
+      "description": "",
       "image_url": "https://images.punkapi.com/v2/4.png",
       "reviews": [
         "Spicy crab cakes, say what?!",
-        "My mum hates it"
+        "My mum hates it",
+        "awesome"
       ]
     },
     {
       "id": 3,
       "name": "Avery Brown Dredge",
-      "description": "We let it sit out in the open air for 12 hours for perfect flatness and add brown sauce for more brownness.",
+      "description": "kip",
       "image_url": "https://images.punkapi.com/v2/5.png",
       "reviews": [
-        "Tastes like a weird squid"
+        "Tastes like a weird squid",
+        "awesome"
       ]
     },
     {
