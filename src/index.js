@@ -59,14 +59,19 @@ function updateBeer(beer)
         'Content-type': 'application/json',
     },
     body: JSON.stringify(beer)
-}).then(res => {res.json()
-   console.log("saved")
+}).then(res => res.json())
+.then(data => {
+    beerDescription(data)
+    // console.log("Save ")
 })
-.then(data => beerDescription(data))
 }
 
-function handleDescription(beer){
+// DESCRIPTION
+function handleDescription(beer)
+{
     let form = document.getElementById('description-form')
+    console.log("xxx",form.description)
+
     form.addEventListener('submit', event => {
         event.preventDefault()
         beer.description = form.description.value;
@@ -75,13 +80,15 @@ function handleDescription(beer){
     })
 }
 
+
+// REVIEW
 function handleReview(beer){
     let form = document.getElementById('review-form')
-    console.log("xxx",form)
     form.addEventListener('submit', event => {
         event.preventDefault()
         let newReview = form.review.value;
         beer.reviews.push(newReview)
+        console.log("review ", beer)
         updateBeer(beer)
     })
 }
