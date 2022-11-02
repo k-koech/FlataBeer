@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/beers/'
+const url = 'https://flatabeer001.herokuapp.com/beers/'
 let parentEl = document.getElementById('beer-list')
 
 document.addEventListener('DOMContentLoaded', () => {
