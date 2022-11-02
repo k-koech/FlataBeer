@@ -51,14 +51,17 @@ function beerReviews(beer){
 
 }
 
-function updateBeer(beer){
+function updateBeer(beer)
+{
     fetch(url + `${beer.id}`, {
         method:'PATCH', 
         headers: {
         'Content-type': 'application/json',
     },
     body: JSON.stringify(beer)
-}).then(res => res.json())
+}).then(res => {res.json()
+   console.log("saved")
+})
 .then(data => beerDescription(data))
 }
 
@@ -74,6 +77,7 @@ function handleDescription(beer){
 
 function handleReview(beer){
     let form = document.getElementById('review-form')
+    console.log("xxx",form)
     form.addEventListener('submit', event => {
         event.preventDefault()
         let newReview = form.review.value;
